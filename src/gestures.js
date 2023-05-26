@@ -4,11 +4,39 @@ const rockGesture = new GestureDescription('rock'); // ✊️
 const paperGesture = new GestureDescription('paper'); // 🖐
 const scissorsGesture = new GestureDescription('scissors'); // ✌️
 const dontGesture = new GestureDescription('dont'); // 🙅
+const thumbsUpGesture = new GestureDescription('thumbs_up'); // 👍
+const middleFingerGesture = new GestureDescription('middle_finger'); // 🖕
+const shakaGesture = new GestureDescription('shaka'); // 🤙
+const pointingRightGesture = new GestureDescription('pointing'); // 👉
 
 
-// Rock
-// -----------------------------------------------------------------------------
+// Dedo polegar: esticado
+shakaGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
 
+// Dedo mínimo: completamente curvado
+shakaGesture.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0);
+
+// Outros dedos: sem curvatura
+for (let finger of [Finger.Index, Finger.Middle, Finger.Ring]) {
+    shakaGesture.addCurl(finger, FingerCurl.HalfCurl, 1.0);
+    shakaGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
+}
+
+// Dedo polegar: esticado e indicador
+pointingRightGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
+pointingRightGesture.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0);
+for (let finger of [Finger.Pinky, Finger.Middle, Finger.Ring]) {
+  pointingRightGesture.addCurl(finger, FingerCurl.HalfCurl, 1.0);
+  pointingRightGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
+}
+// Dedo médio: completamente esticado
+middleFingerGesture.addCurl(Finger.Middle, FingerCurl.NoCurl, 1.0);
+
+// Outros dedos: completamente curvados
+for(let finger of [Finger.Thumb, Finger.Index, Finger.Ring, Finger.Pinky]) {
+    middleFingerGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
+    middleFingerGesture.addCurl(finger, FingerCurl.HalfCurl, 0.9);
+}
 // thumb: half curled
 // accept no curl with a bit lower confidence
 rockGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 1.0);
@@ -19,6 +47,7 @@ for(let finger of [Finger.Index, Finger.Middle, Finger.Ring, Finger.Pinky]) {
     rockGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
     rockGesture.addCurl(finger, FingerCurl.HalfCurl, 0.9);
 }
+
 
 
 // Paper
@@ -61,7 +90,7 @@ for(const finger of Finger.all) {
 
 
 const gestures = [
-  rockGesture, paperGesture, scissorsGesture, dontGesture
+  rockGesture, paperGesture, scissorsGesture, dontGesture,thumbsUpGesture,middleFingerGesture,shakaGesture,pointingRightGesture
 ]
 
 export {

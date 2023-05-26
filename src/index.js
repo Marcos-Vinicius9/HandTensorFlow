@@ -18,7 +18,10 @@ const gestureStrings = {
   'rock': '✊️',
   'paper': '🖐',
   'scissors': '✌️',
-  'dont': '🙅'
+  'dont': '🙅',
+  'middle_finger':'🖕',
+  'shaka': '🤙',
+  'pointingRightGesture':'👉'
 }
 
 const base = ['Horizontal ', 'Diagonal Up ']
