@@ -23,7 +23,8 @@ const gestureStrings = {
   'shaka': '🤙',
   'heart':  '❤️',
   'ok': '👌'
-  
+  'pointing':'👉',
+  'palm_up_hand': '🫴'
 }
 
 const base = ['Horizontal ', 'Diagonal Up ']

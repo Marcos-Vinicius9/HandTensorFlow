@@ -11,6 +11,7 @@ const pointingRightGesture = new GestureDescription('\u2764\ufe0f'); // 👉
 const heartGesture = new GestureDescription('heart'); // ❤️
 const okGesture = new GestureDescription('ok'); // 👌
 
+
 // Dedo polegar: esticado
 heartGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
 
@@ -21,6 +22,11 @@ heartGesture.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0);
 for (let finger of [Finger.Index, Finger.Middle, Finger.Ring]) {
   heartGesture.addCurl(finger, FingerCurl.HalfCurl, 1.0);
 }
+
+const letterDlibras = new GestureDescription('palm_up_hand');
+
+
+
 
 
 // Dedo polegar: completamente curvado
@@ -60,12 +66,11 @@ for(let finger of [Finger.Thumb, Finger.Index, Finger.Ring, Finger.Pinky]) {
     middleFingerGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
     middleFingerGesture.addCurl(finger, FingerCurl.HalfCurl, 0.9);
 }
-// thumb: half curled
-// accept no curl with a bit lower confidence
+
 rockGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 1.0);
 rockGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 0.5);
 
-// all other fingers: curled
+
 for(let finger of [Finger.Index, Finger.Middle, Finger.Ring, Finger.Pinky]) {
     rockGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
     rockGesture.addCurl(finger, FingerCurl.HalfCurl, 0.9);
@@ -76,7 +81,7 @@ for(let finger of [Finger.Index, Finger.Middle, Finger.Ring, Finger.Pinky]) {
 // Paper
 // -----------------------------------------------------------------------------
 
-// no finger should be curled
+
 for(let finger of Finger.all) {
     paperGesture.addCurl(finger, FingerCurl.NoCurl, 1.0);
 }
@@ -85,15 +90,15 @@ for(let finger of Finger.all) {
 // Scissors
 //------------------------------------------------------------------------------
 
-// index and middle finger: stretched out
+
 scissorsGesture.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0);
 scissorsGesture.addCurl(Finger.Middle, FingerCurl.NoCurl, 1.0);
 
-// ring: curled
+
 scissorsGesture.addCurl(Finger.Ring, FingerCurl.FullCurl, 1.0);
 scissorsGesture.addCurl(Finger.Ring, FingerCurl.HalfCurl, 0.9);
 
-// pinky: curled
+
 scissorsGesture.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1.0);
 scissorsGesture.addCurl(Finger.Pinky, FingerCurl.HalfCurl, 0.9);
 
@@ -111,9 +116,19 @@ for(const finger of Finger.all) {
   dontGesture.addDirection(finger, FingerDirection.HorizontalLeft, 1.0)
 }
 
+//Letter D
+  letterDlibras.addCurl(Finger.Thumb,FingerCurl.NoCurl, 1.0)
+  letterDlibras.addCurl(Finger.Index, FingerCurl.HalfCurl, 1.0)
+  letterDlibras.addCurl(Finger.Middle, FingerCurl.HalfCurl, 1.0)
+  letterDlibras.addCurl(Finger.Ring, FingerCurl.HalfCurl, 1.0)
+  letterDlibras.addCurl(Finger.Pinky, FingerCurl.HalfCurl, 1.0)
+
+
+
 
 const gestures = [
-  rockGesture, paperGesture, scissorsGesture, dontGesture,thumbsUpGesture,middleFingerGesture,shakaGesture,pointingRightGesture,heartGesture,okGesture
+
+  rockGesture, paperGesture, scissorsGesture, dontGesture,thumbsUpGesture,middleFingerGesture,shakaGesture,pointingRightGesture,letterDlibras,heartGesture,okGesture
 ]
 
 export {
