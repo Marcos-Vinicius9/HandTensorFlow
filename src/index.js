@@ -21,7 +21,9 @@ const gestureStrings = {
   'dont': '🙅',
   'middle_finger':'🖕',
   'shaka': '🤙',
-  'pointingRightGesture':'👉'
+  'heart':  '❤️',
+  'ok': '👌'
+  
 }
 
 const base = ['Horizontal ', 'Diagonal Up ']
