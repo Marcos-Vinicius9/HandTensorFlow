@@ -9,6 +9,9 @@ const middleFingerGesture = new GestureDescription('middle_finger'); // 🖕
 const shakaGesture = new GestureDescription('shaka'); // 🤙
 const pointingRightGesture = new GestureDescription('pointing'); // 👉
 
+const letterDlibras = new GestureDescription('palm_up_hand');
+
+
 
 // Dedo polegar: esticado
 shakaGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
@@ -87,9 +90,18 @@ for(const finger of Finger.all) {
   dontGesture.addDirection(finger, FingerDirection.HorizontalLeft, 1.0)
 }
 
+//Letter D
+  letterDlibras.addCurl(Finger.Thumb,FingerCurl.NoCurl, 1.0)
+  letterDlibras.addCurl(Finger.Index, FingerCurl.HalfCurl, 1.0)
+  letterDlibras.addCurl(Finger.Middle, FingerCurl.HalfCurl, 1.0)
+  letterDlibras.addCurl(Finger.Ring, FingerCurl.HalfCurl, 1.0)
+  letterDlibras.addCurl(Finger.Pinky, FingerCurl.HalfCurl, 1.0)
+
+
+
 
 const gestures = [
-  rockGesture, paperGesture, scissorsGesture, dontGesture,thumbsUpGesture,middleFingerGesture,shakaGesture,pointingRightGesture
+  rockGesture, paperGesture, scissorsGesture, dontGesture,thumbsUpGesture,middleFingerGesture,shakaGesture,pointingRightGesture,letterDlibras
 ]
 
 export {
