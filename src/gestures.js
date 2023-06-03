@@ -7,12 +7,38 @@ const dontGesture = new GestureDescription('dont'); // 🙅
 const thumbsUpGesture = new GestureDescription('thumbs_up'); // 👍
 const middleFingerGesture = new GestureDescription('middle_finger'); // 🖕
 const shakaGesture = new GestureDescription('shaka'); // 🤙
-const pointingRightGesture = new GestureDescription('pointing'); // 👉
+const pointingRightGesture = new GestureDescription('\u2764\ufe0f'); // 👉
+const heartGesture = new GestureDescription('heart'); // ❤️
+const okGesture = new GestureDescription('ok'); // 👌
+
+
+// Dedo polegar: esticado
+heartGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
+
+// Dedo mínimo: esticado
+heartGesture.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0);
+
+// Outros dedos: curvatura média
+for (let finger of [Finger.Index, Finger.Middle, Finger.Ring]) {
+  heartGesture.addCurl(finger, FingerCurl.HalfCurl, 1.0);
+}
 
 const letterDlibras = new GestureDescription('palm_up_hand');
 
 
 
+
+
+// Dedo polegar: completamente curvado
+okGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
+okGesture.addCurl(Finger.Ring, FingerCurl.NoCurl, 1.0);
+okGesture.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0);
+
+// Outros dedos: sem curvatura
+for (let finger of [Finger.Index, Finger.Middle]) {
+  okGesture.addCurl(finger, FingerCurl.HalfCurl, 1.0);
+  okGesture.addCurl(finger, FingerCurl.FullCurl, 1.0);
+}
 // Dedo polegar: esticado
 shakaGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
 
@@ -101,7 +127,8 @@ for(const finger of Finger.all) {
 
 
 const gestures = [
-  rockGesture, paperGesture, scissorsGesture, dontGesture,thumbsUpGesture,middleFingerGesture,shakaGesture,pointingRightGesture,letterDlibras
+
+  rockGesture, paperGesture, scissorsGesture, dontGesture,thumbsUpGesture,middleFingerGesture,shakaGesture,pointingRightGesture,letterDlibras,heartGesture,okGesture
 ]
 
 export {

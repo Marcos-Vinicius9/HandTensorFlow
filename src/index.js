@@ -21,6 +21,8 @@ const gestureStrings = {
   'dont': '🙅',
   'middle_finger':'🖕',
   'shaka': '🤙',
+  'heart':  '❤️',
+  'ok': '👌'
   'pointing':'👉',
   'palm_up_hand': '🫴'
 }
