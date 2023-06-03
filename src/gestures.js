@@ -7,10 +7,10 @@ const dontGesture = new GestureDescription('dont'); // 🙅
 const thumbsUpGesture = new GestureDescription('thumbs_up'); // 👍
 const middleFingerGesture = new GestureDescription('middle_finger'); // 🖕
 const shakaGesture = new GestureDescription('shaka'); // 🤙
-const pointingRightGesture = new GestureDescription('\u2764\ufe0f'); // 👉
+const pointingRightGesture = new GestureDescription('pointing'); // 👉
 const heartGesture = new GestureDescription('heart'); // ❤️
 const okGesture = new GestureDescription('ok'); // 👌
-
+const letterDlibras = new GestureDescription('Letra C - Libras');
 
 // Dedo polegar: esticado
 heartGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0);
@@ -23,7 +23,7 @@ for (let finger of [Finger.Index, Finger.Middle, Finger.Ring]) {
   heartGesture.addCurl(finger, FingerCurl.HalfCurl, 1.0);
 }
 
-const letterDlibras = new GestureDescription('palm_up_hand');
+
 
 
 
