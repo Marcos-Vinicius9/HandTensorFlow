@@ -17,10 +17,15 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  h2{
+    color: white;
+  }
   
   .container {
     margin: 20px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
@@ -130,4 +135,4 @@
     75% { background-color: rgb(255, 255, 0); }
     100% { background-color: rgb(255, 0, 255); }
   }
-  
+
