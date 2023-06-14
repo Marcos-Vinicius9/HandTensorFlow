@@ -1,7 +1,7 @@
 const { GestureDescription, Finger, FingerCurl, FingerDirection } = window.fp;
 
 const letterBLibras = new GestureDescription('Letra B - Libras');
-
+const letterALibras = new GestureDescription('Letra A - Libras');
 const letterClibras = new GestureDescription('Letra C - Libras');
 
   //Letter B
@@ -19,12 +19,17 @@ const letterClibras = new GestureDescription('Letra C - Libras');
   letterClibras.addCurl(Finger.Ring, FingerCurl.HalfCurl, 1.0)
   letterClibras.addCurl(Finger.Pinky, FingerCurl.HalfCurl, 1.0)
 
-
+  //Letter A
+  letterALibras.addCurl(Finger.Thumb,FingerCurl.NoCurl, 1.0)
+  letterALibras.addCurl(Finger.Index, FingerCurl.FullCurl, 1.0)
+  letterALibras.addCurl(Finger.Middle, FingerCurl.FullCurl, 1.0)
+  letterALibras.addCurl(Finger.Ring, FingerCurl.FullCurl, 1.0)
+  letterALibras.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1.0)
 
 
 const gestures = [
 
-  letterBLibras,letterClibras,
+  letterBLibras,letterClibras,letterALibras
 ]
 
 export {

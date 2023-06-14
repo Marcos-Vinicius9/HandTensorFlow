@@ -14,7 +14,8 @@ const landmarkColors = {
 
 const gestureStrings = {
   'Letra B - Libras': 'Letra B - Libras',
-  'Letra C - Libras': 'Letra C - Libras'
+  'Letra C - Libras': 'Letra C - Libras',
+  'Letra A - Libras': 'Letra A - Libras',
 }
 
 const base = ['Horizontal ', 'Diagonal Up ']
