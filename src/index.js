@@ -7,15 +7,40 @@ const landmarkColors = {
   thumb: 'red',
   index: 'blue',
   middle: 'yellow',
-  ring: 'green',
+  ring: 'green', 
   pinky: 'pink',
   wrist: 'white'
 }
 
 const gestureStrings = {
-  'Letra B - Libras': 'Letra B - Libras',
-  'Letra C - Libras': 'Letra C - Libras',
   'Letra A - Libras': 'Letra A - Libras',
+  'Letra B - Libras': 'Letra B - Libras',
+  'Letra C - Libras': 'Letra C - Libras' ,
+  'Letra D - Libras': 'Letra D - Libras',
+  'Letra E - Libras' : 'Letra E - Libras', 
+  'Letra F - Libras': 'Letra F - Libras',
+  'Letra G - Libras' : 'Letra G - Libras',
+  'Letra H - Libras': 'Letra H - Libras',
+  'Letra I - Libras': 'Letra I - Libras',
+  'Letra J - Libras': 'Letra J - Libras',
+  'Letra L - Libras': 'Letra L - Libras',
+  'Letra M - Libras': 'Letra M - Libras',
+  'Letra N - Libras': 'Letra N - Libras',
+  'Letra O - Libras': 'Letra O - Libras',
+  'Letra P - Libras': 'Letra P - Libras',
+  'Letra Q - Libras': 'Letra Q - Libras',
+  'Letra R - Libras': 'Letra R - Libras',
+  'Letra S - Libras': 'Letra S - Libras',
+  'Letra U - Libras': 'Letra U - Libras',
+  'Letra V - Libras': 'Letra V - Libras',
+  'Letra W - Libras': 'Letra W - Libras',
+  'Letra Y - Libras' : 'Letra Y - Libras',
+  'Perfeito':'Perfeito',
+  'TE AMO - LIBRAS': 'TE AMO - LIBRAS',
+  'PAZ E AMOR' : 'PAZ E AMOR',
+  'Ligar/Beleza':'Ligar/Beleza',
+  'ROCK' : 'ROCK'
+  
 }
 
 const base = ['Horizontal ', 'Diagonal Up ']
