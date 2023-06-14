@@ -13,6 +13,7 @@ const landmarkColors = {
 }
 
 const gestureStrings = {
+  'Letra B - Libras': 'Letra B - Libras',
   'Letra C - Libras': 'Letra C - Libras'
 }
 
