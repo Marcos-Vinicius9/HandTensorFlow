@@ -13,17 +13,6 @@ const landmarkColors = {
 }
 
 const gestureStrings = {
-  'thumbs_up': '👍',
-  'victory': '✌🏻',
-  'rock': '✊️',
-  'paper': '🖐',
-  'scissors': '✌️',
-  'dont': '🙅',
-  'middle_finger':'🖕',
-  'shaka': '🤙',
-  'heart':  '❤️',
-  'ok': '👌',
-  'pointing':'👉',
   'Letra C - Libras': 'Letra C - Libras'
 }
 
