@@ -74,13 +74,14 @@ letterBLibras.addCurl(Finger.Middle, FingerCurl.NoCurl, 1.0)
 letterBLibras.addCurl(Finger.Ring, FingerCurl.NoCurl, 1.0)
 letterBLibras.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0)
 
+
 //Letter C
 letterClibras.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0)
 letterClibras.addCurl(Finger.Index, FingerCurl.HalfCurl, 1.0)
 letterClibras.addCurl(Finger.Middle, FingerCurl.HalfCurl, 1.0)
 letterClibras.addCurl(Finger.Ring, FingerCurl.HalfCurl, 1.0)
-letterClibras.addCurl(Finger.Pinky, FingerCurl.NoCurl, 1.0)
-letterClibras.addDirection(Finger.Thumb, FingerDirection.HorizontalRightRight, 1.0)
+letterClibras.addCurl(Finger.Pinky, FingerCurl.HalfCurl, 1.0)
+letterClibras.addDirection(Finger.Thumb, FingerDirection.HorizontalRight, 1.0)
 letterClibras.addDirection(Finger.Index, FingerDirection.DiagonalUpRight, 1.0)
 letterClibras.addDirection(Finger.Middle, FingerDirection.DiagonalUpRight, 1.0)
 letterClibras.addDirection(Finger.Ring, FingerDirection.DiagonalUpRight, 1.0)
@@ -121,6 +122,12 @@ letterHlibras.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0)
 letterHlibras.addCurl(Finger.Middle, FingerCurl.NoCurl, 1.0)
 letterHlibras.addCurl(Finger.Ring, FingerCurl.FullCurl, 1.0)
 letterHlibras.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1.0)
+letterHlibras.addDirection(Finger.Thumb, FingerDirection.VerticalUp, 1.0)
+letterHlibras.addDirection(Finger.Index, FingerDirection.VerticalUp, 1.0)
+letterHlibras.addDirection(Finger.Middle, FingerDirection.VerticalUp, 1.0)
+letterHlibras.addDirection(Finger.Ring, FingerDirection.DiagonalUpRight)
+letterHlibras.addDirection(Finger.Pinky, FingerDirection.DiagonalUpRight)
+
 
 //Letter I
 letterIlibras.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 1.0)
@@ -229,6 +236,11 @@ letterPLibras.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0)
 letterPLibras.addCurl(Finger.Middle, FingerCurl.HalfCurl, 1.0)
 letterPLibras.addCurl(Finger.Ring, FingerCurl.FullCurl, 1.0)
 letterPLibras.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1.0)
+letterPLibras.addDirection(Finger.Thumb, FingerDirection.HorizontalRight, 1.0)
+letterPLibras.addDirection(Finger.Index, FingerDirection.HorizontalRight, 1.0)
+letterPLibras.addDirection(Finger.Middle, FingerDirection.HorizontalRight, 1.0)
+letterPLibras.addDirection(Finger.Ring, FingerDirection.HorizontalRight, 1.0)
+letterPLibras.addDirection(Finger.Pinky, FingerDirection.HorizontalRight, 1.0)
 
 //Letter Y
 letterYLibras.addCurl(Finger.Thumb, FingerCurl.NoCurl, 1.0)
